@@ -1525,12 +1525,12 @@
     }
     const distanceFromEnd = contentLength - visibleLength - offset;
     // If the distance is so farther than the area shown on the screen
-    if (distanceFromEnd  visibleLength * 1.5) {
+    if (distanceFromEnd >= visibleLength * 1.5) {
       return;
     }
     // $FlowFixMe
     const minimumDistanceFromEnd = onEndReachedThreshold * visibleLength;
-    if (distanceFromEnd  minimumDistanceFromEnd) {
+    if (distanceFromEnd >= minimumDistanceFromEnd) {
       return;
     }
 
